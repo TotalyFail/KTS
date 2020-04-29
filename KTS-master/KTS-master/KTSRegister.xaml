@@ -1,0 +1,40 @@
+﻿<Page x:Class="KTS.KTSRegister"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KTS"
+      mc:Ignorable="d" 
+      Height="{Binding SystemParameters.PrimaryScreenHeight}" 
+      Width="{Binding SystemParameters.PrimaryScreenWidth}"
+      Title="KTSRegister">
+
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="BlueBackground.png"  />
+        </Grid.Background>
+
+        <Button x:Name="button1"  Style="{StaticResource btnBlue}" Content="Prideti vartotoja" HorizontalAlignment="Left" Margin="163,271,0,0" VerticalAlignment="Top" Width="125" Click="button1_Click"/>
+        <TextBox x:Name="textboxSamAccountName" HorizontalAlignment="Left" Height="22" Margin="136,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="5"/>
+        <Label Content="Name: " HorizontalAlignment="Left" Margin="79,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="66,67,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label Content="SamAccountName: " HorizontalAlignment="Left" Margin="17,39,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="textboxName" HorizontalAlignment="Left" Height="23" Margin="136,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="7"/>
+        <TextBox x:Name="textboxPhoneNumber" HorizontalAlignment="Left" Height="23" Margin="136,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="8"/>
+        <TextBox x:Name="textboxSurname" HorizontalAlignment="Left" Height="24" Margin="136,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="9"/>
+        <Label Content="Tel. Nr.: " HorizontalAlignment="Left" Margin="79,120,0,0" VerticalAlignment="Top" Width="48" Height="27"/>
+        <Label Content="Surname: " HorizontalAlignment="Left" Margin="66,148,0,0" VerticalAlignment="Top" Width="61"/>
+        <TextBox x:Name="textboxDescription" HorizontalAlignment="Left" Height="22" Margin="136,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="11"/>
+        <Label Content="Description: " HorizontalAlignment="Left" Margin="54,205,0,0" VerticalAlignment="Top" Width="73"/>
+        <RadioButton x:Name="radiobuttonEnable" Content="Enable User" HorizontalAlignment="Left" Margin="160,241,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <PasswordBox x:Name="passwordboxUserPass" HorizontalAlignment="Left" Height="24" Margin="136,69,0,0" VerticalAlignment="Top" Width="150" TabIndex="6"/>
+        <TextBox x:Name="textboxLonOnName" HorizontalAlignment="Left" Height="22" Margin="136,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="4"/>
+        <Label Content="Logon Name:" HorizontalAlignment="Left" Margin="45,9,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="textboxDisplayName" HorizontalAlignment="Left" Height="24" Margin="136,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="10"/>
+        <Label Content="Display Name:" HorizontalAlignment="Left" Margin="41,176,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="User to delete:" HorizontalAlignment="Left" Margin="360,10,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="22" Margin="450,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" TabIndex="1"/>
+        <Button Click="Button_Click_Remove"  Style="{StaticResource btnBlue}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="153" Margin="450,50,0,0" TabIndex="1">Vartotojo trynimas</Button>
+    </Grid>
+</Page>
